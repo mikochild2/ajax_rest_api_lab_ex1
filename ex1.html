@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <h2>Exercise 1</h2>
+    <p>Use jQuery to do the following things with the <a href="https://my-json-server.typicode.com/zachhall/WIN2020_AjaxPromises" target="_blank">https://my-json-server.typicode.com/zachhall/WIN2020_AjaxPromises</a></p>
+    <ol>
+        <li>Create buttons that do each of the tasks below</li>
+        <li>Render the results to the page in html elements</li>
+        <li>Hide the results from the previous actions</li>
+    </ol>
+    <ul>
+        <li>Get all posts</li>
+        <li>Get post with id of 10</li>
+        <li>Get the comments from post with id of 12. <strong>Note:</strong> comments are part of a different data model, you'll need to structure your endpoint to ask for all of the comments that belong to post #12</li>
+        <li>Get all the posts from user with id of 2</li>
+        <li>Create a new post and log the id generated for it by the server</li>
+        <li>Replace the post with id of 12 and render the responseJSON</li>
+        <li>Update the title of post with id of 12 and render responseJSON</li>
+        <li>Delete the post with id of 12 and render a success message</li>
+        <li>Display a list of posts.</li>
+        <li>When the user clicks on a post, display all the comments from that post</li>
+        <li>Display a link back to all posts</li>
+    </ul>
+    <div>
+        <button id="all-posts">Get All Posts</button>
+        <button id="post10">Post 10</button>
+        <button id="comment12">ID 12 Comments</button>
+        <button id="user2">Posts From User 2</button>
+        <button id="create-post">Create Posts</button>
+        <button id="replace-post">Replace Post</button>
+        <button id="update-title">Update Title</button>
+        <button id="delete-post">Delete Post</button>
+        <button id="display-list">Display Post List</button>
+
+    </div>
+    <div class="content-style">
+        <h3 id="title"></h3>
+        <p id="content"></p>
+    </div>
+
+   <!-- <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script> -->
+  <script src="ex1.js"></script>
+</body>
+</html>
